@@ -11,12 +11,12 @@ int main(){
         scanf("%d", &num);
 
         if (num == numacertado){
-            printf("Acertaste el numero era: %d/n", num);
+            printf("Acertaste el numero era: %d\n", num);
             return 0;
         } else if (num < numacertado){
-            printf("Falta mas papito. /n ");
+            printf("Falta mas papito. \n ");
         } else if (num > numacertado){
-            printf("Te pasaste mucho bb. /n ");
+            printf("Te pasaste mucho bb. \n ");
         }
         intento++;
     }
