@@ -116,4 +116,23 @@ void editarProducto(char productos[][3][40],double precio[], int indice[]){
 
 }
 
+void eliminarProducto(char productos[][3][40], double precio[], int indice[]) {
+    int num;
+    listarProductos(productos, precio, indice);
+    printf("Ingrese el numero del elemento que desea eliminar: \n");
+    scanf("%d", &num);
+    num--; 
+    
+    if (num >= 0 && num < 10 && indice[num] != -1) {
+        indice[num] = -1;
+        strcpy(productos[num][0], "");
+        strcpy(productos[num][1], "");
+        strcpy(productos[num][2], "");
+        precio[num] = 0.0;
+        printf("Producto eliminado exitosamente.\n");
+    } else {
+        printf("Numero de producto invalido.\n");
+    }
+}
+
 
