@@ -1,66 +1,48 @@
 #include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
+#include <string.h>
 
-int main(){
+void Buscarproducto();
+void Ingresarproducto();
+void Editarproducto();
+void Eliminarproducto();
+void Mostrarproducto();
 
-    int x1, x2, x3, y1, y2, y3;
-    int a, b, c, d, e, f, g, h, i, k, l, m, n;
-    float j, o, p;
+int main(int argc, char const *argv[])
+{
+    int num;
+    char[4][2][40] 
+    printf("Hola esta tienda te va a registrar todo asi que comenzemos \n");
+    printf("Que te gustaria hacer? \n");
+    printf("\n1.Buscar producto \n2 ingresar producto \n3  Editar producto \n4 Eliminar producto \n5  Mostrar producto \n6 Salir");
+    scanf("%i", &num);
 
-    printf("Dame los primeros puntos, punto (x) \n");
-    scanf("%i", &x1);
-
-    printf("Dame los primeros puntos, punto (y)\n");
-    scanf("%i", &y1);
-
-    printf("Dame los segundos puntos, punto (x)\n");
-    scanf("%i", &x2);
-
-    printf("Dame los segundos puntos, punto (y)\n");
-    scanf("%i", &y2);
-
-    printf("Dame los terceros puntos, punto(x)\n");
-    scanf("%i", &x3);
-
-    printf("Dame los terceros puntos, punto(y)\n");
-    scanf("%i", &y3);
-
-
-    //Al cuadrado
-    a = x1 * x1;
-    b = y1 *y1;
-    c = x2 * x2;
-    d= y2 * y2;
-    e = x3 * x3;
-    f = y3 * y3;
-
-    //resta
-
-    g = a - c;
-    h = b - d;
-    i=  e - a;
-    j= f - b;
-    k= e - c;
-    l = f - d;
-
-    //suma   
-
-    m = g + h;
-    n = i + j;
-    o= k + l;
-
-    //raiz
-
-    float raiz1 = sqrt(m);
-    float raiz2 = sqrt(n);
-    float raiz3 = sqrt(o);
-
-    printf("La distancia del punto 1 al punto 2 es de: %.2f\n", m);
-    printf("La distancia del punto 1 al punto 3 es de: %.2f\n", n);
-    printf("La distancia del punto 2 al punto 3 es de: %.2f\n", o);
-
-
-
+    do
+    {
+        switch (num)
+        {
+        case 1:
+            Buscarproducto();
+            break;
+        case 2:
+            Ingresarproducto();
+            break;
+        case 3:
+            Editarproducto();
+            break;
+        case 4:
+            Eliminarproducto();
+            break;
+        case 5:
+            Mostrarproducto();
+            break;
+        default:
+            break;
+        }
+    } while (num == 6);
+    
     return 0;
+}
+
+void Buscarproducto(){
+
 }
