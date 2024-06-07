@@ -12,7 +12,7 @@ int main() {
     //* Dado que programacion tiene 12 caracteres 
     //* creamos el array destino de la misma dimension
 
-    char Destino[12];
+    char Destino[10];
     //! Copiamos el contenido y lo mostramos
 
     strcpy(Destino,Origen);
